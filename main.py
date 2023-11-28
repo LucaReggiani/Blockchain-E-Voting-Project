@@ -58,7 +58,7 @@ def homepage():
                 form_add_election = AddElectionForm()
                 return render_template('index.html', 
                                        user=user, 
-                                       email=email, 
+                                       emaielectionsl=email, 
                                        elections=elections, 
                                        form_add_election=form_add_election
                                        )
@@ -214,7 +214,6 @@ def user_login():
             'gasPrice': web3.to_wei('50', 'gwei'),
             "nonce": web3.eth.get_transaction_count(account),
         })
-
         try:
             # Send the transaction
             transaction_hash = web3.eth.send_transaction(transaction)
@@ -235,6 +234,7 @@ def user_login():
             message = "Email or password are incorrect! If you did not register yet, click on the link under the form."
             form_login = LoginForm()
             return render_template('login.html', form_login=form_login, message=message)
+
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup_user():

@@ -51,7 +51,7 @@ write here if you want to add css links only in this page
                     {% include 'forms/add_candidate.html' %} 
                 </div>
             {% endif %}
-            <div class="container">
+            <div class="row">
                 {% for candidate in candidates %}
                     {% if candidate.election_id ==  election.id %}
                         <div class="col-lg-4 col-md-6 col-sm-12 book-card">

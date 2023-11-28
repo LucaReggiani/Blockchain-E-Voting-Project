@@ -148,10 +148,10 @@ def add_candidate_to_election(id, name, lastname, manifesto, election_id):
         if receipt["status"] == 1:
             return "Candidate added!"
         else:
-            return "Failed to add candidate!"
+            return None
 
     except ValueError:
-        return "Failed to add candidate!"
+        return None
     
 
 def get_all_candidates():

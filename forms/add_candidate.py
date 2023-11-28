@@ -5,6 +5,6 @@ from wtforms.validators import DataRequired
 
 class AddCandidateForm(FlaskForm):
     id = IntegerField('Id Candidate', validators=[DataRequired()])
-    name = StringField('Name Candidate', validators=[DataRequired(), Length(min=1, max=500)])
-    lastname = StringField('Lastname Candidate', validators=[DataRequired(), Length(min=1, max=500)])
-    manifesto = StringField('Manifesto', validators=[DataRequired(), Length(min=1, max=500)])
+    name = StringField('Name Candidate', validators=[DataRequired(), Length(min=1, max=32)])
+    lastname = StringField('Lastname Candidate', validators=[DataRequired(), Length(min=1, max=32)])
+    manifesto = StringField('Manifesto', validators=[DataRequired(), Length(min=1, max=32)])

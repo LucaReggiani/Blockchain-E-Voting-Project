@@ -5,4 +5,4 @@ from wtforms.validators import DataRequired
 
 class AddElectionForm(FlaskForm):
     id = IntegerField('Id Election', validators=[DataRequired()])
-    purpose = StringField('Purpose', validators=[DataRequired(), Length(min=1, max=500)])
+    purpose = StringField('Purpose', validators=[DataRequired(), Length(min=1, max=32)])

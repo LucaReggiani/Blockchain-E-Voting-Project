@@ -11,10 +11,10 @@ web3.enable_unstable_package_management_api()
 
 
 # Address of your deployed UserContract and VotingContract
-user_contract_address = "0x92C2CaDAf01B85dDd245bF555315819221347489"
-election_contract_address = "0x5bF3a35B6A6dB750Cd54f2B699FA9Ee05192ef7b"
-candidate_contract_address = "0x0Cf486122D28776723a369222242d84750982824"
-voting_contract_address = "0xa9DD45B72e5160d11bd1c53338fd9f591d5f12bd"
+user_contract_address = "0x594ca29Ccf6a8096ADF5C0EA9fe37748903e948E"
+election_contract_address = "0x5EbAfC3D90071C67116F75f26D79312636822FbF"
+candidate_contract_address = "0x26C19EbE4312D625e63e5A71a4f7082FAdC70865"
+voting_contract_address = "0x42037024797E1EDce197D446085e93Ae4D23B328"
 
 # ABIs
 user_abi_file_path = './abis/user_contract_abi.json'
